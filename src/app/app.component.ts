@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import websdk from '@sumsub/websdk';
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +9,7 @@ import websdk from '@sumsub/websdk';
 export class AppComponent {
   constructor() {
     
-    const build = websdk.Build();
+    const build = websdk.Builder();
 
     console.log(`websdk`, websdk, build);
   }
